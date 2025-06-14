@@ -1,14 +1,16 @@
 # Farmasis
 
-Farmasis es una aplicación web para la gestión de productos y notas en una farmacia. Permite agregar, listar y administrar productos, así como registrar notas asociadas.
+Farmasis es una aplicación web diseñada para la gestión y administración integral de una farmacia. La plataforma permite la administración eficiente de inventario, así como el registro de clientes frecuentes, provedores, pedidos y otras funcionalidades clave para la correcta y eficiente gestión del negocio.
 
 ## Características principales
-- Gestión de productos: alta, edición y listado.
-- Registro de notas
-- Interfaz moderna basada en Bootstrap.
+- Gestión de productos: Consulta, creación, edición y eliminación de productos.
+- Gestión de clientes: Consulta, creación, edición y eliminación de clientes.
+- Registro y administración de notas representando recordatorios o tareas pendientes a realizar.
+- Interfaz de usuario moderna basada en Bootstrap para una experiencia intuitiva.
 
-## Tecnologías utilizadas
-- Java 17+
+
+## Tecnologías empleadas
+- Java 17 o superior
 - Spring Boot
 - Thymeleaf
 - Bootstrap 5
@@ -28,23 +30,23 @@ src/
 ```
 
 ## Instalación y ejecución
-1. Clona el repositorio:
+1. Clone el repositorio:
    ```bash
    git clone <url-del-repo>
    ```
-2. Entra al directorio del proyecto:
+2. Acceda al directorio del proyecto:
    ```bash
    cd Farmasis
    ```
-3. Ejecuta la aplicación con Maven:
+3. Ejecute la aplicación utilizando Maven:
    ```bash
    ./mvnw spring-boot:run
    ```
-4. Accede a la aplicación en [http://localhost:8080](http://localhost:8080)
+4. Ingrese a la aplicación a través de [http://localhost:8080](http://localhost:8080)
 
 ## Personalización
-- Puedes modificar las vistas en `src/main/resources/templates`.
+- Las vistas pueden ser modificadas en `src/main/resources/templates`.
 - Los estilos y scripts adicionales pueden agregarse en `src/main/resources/static`.
 
 ## Licencia
-Este proyecto está bajo la licencia MIT.
+Este proyecto se distribuye bajo la licencia MIT.
