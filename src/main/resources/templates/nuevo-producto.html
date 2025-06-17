@@ -16,7 +16,8 @@
         <div class="row">
             <!-- Contenido -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <h2 class="mt-4 mb-4">Agregar Nuevo Producto</h2>
+                <h2 class="mt-4 mb-4" th:text="${producto.id != null} ? 'Editar Producto' : 'Agregar nuevo producto'"></h2>
+
 
                 <form th:action="@{/productos/guardar}" th:object="${producto}" method="post">
                     <input type="hidden" th:field="*{id}">
@@ -64,7 +65,7 @@
                             <div class="col-md-6">
                                 <label class="form-label">Margen de Ganancia (%)</label>
                                 <input id="margenGanancia" type="number" th:field="*{margenGanancia}"
-                                    class="form-control" min="0" max="100">
+                                    class="form-control" min="0">
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">Categoría</label>

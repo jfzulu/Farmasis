@@ -23,7 +23,7 @@
     <!-- Contenido -->
     <div class="contenido">
         <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="mb-0">INVENTARIO - PRODUCTOS</h2>
+            <h1 class="mb-0 text-primary">Listado de productos</h1>
             <a th:href="@{/productos/nuevo}" class="btn btn-primary btn-lg">
                 <i class="bi bi-plus-circle"></i> Agregar Producto
             </a>
@@ -32,7 +32,7 @@
         <div class="mb-3">
             <input id="input-busqueda" type="text" class="form-control" placeholder="Buscar por nombre...">
         </div>
-
+        <hr>
 
 
 
@@ -128,8 +128,8 @@
                             <td>${producto.margenGanancia}</td>
                             <td>${producto.categoria}</td>
                             <td>
-                                <a href="#" class="btn btn-sm btn-warning">Editar</a>
-                                <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                <a href="/productos/editar/${producto.id}" class="btn btn-sm btn-warning">Editar</a>
+                                <a href="/productos/eliminar/${producto.id}" class="btn btn-sm btn-danger">Eliminar</a>
                             </td>
                         </tr>`;
                         });
